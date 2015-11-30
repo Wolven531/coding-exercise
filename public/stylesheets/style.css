@@ -1,0 +1,172 @@
+#search-filters {
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 25px;
+  /*margin: 0 auto;*/
+  /*float: left;*/
+}
+
+#search-filters h3 {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 40%;
+  min-width: 170px;
+}
+
+#search-filters button {
+  width: 100%;
+}
+
+#search-filters .input-group {
+  width: 100%;
+  text-align: center;
+}
+
+#search-filters .input-group:last-child {
+  margin-top: 15px;
+}
+
+#search-filters .input-group-addon {
+  width: 30%;
+}
+
+#search-filters select {
+  width: 100%;
+  border-radius: 0;
+  /*display: table-cell;*/
+  position: relative;
+  z-index: 2;
+  float: left;
+  /*margin-bottom: 0;*/
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  margin: 0;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#search-results {
+  margin-top: 25px;
+}
+
+.car {
+  border: 1px solid #000;
+  padding: 5px 15px;
+  /*padding: 10px;*/
+  /*width: 80%;*/
+  /*margin: 0 auto;*/
+}
+
+.car .header {
+  margin-bottom: 10px;
+}
+
+.car .name {
+  margin-bottom: 0;
+}
+
+.car .pricing {
+  /*border: 1px solid #000;*/
+  padding: 10px;
+  /*float: right;*/
+  /*top: -112px;*/
+  /*position: relative;*/
+  /*background-color: #7ab921;*/
+  background-color: #0a0;
+  color: #fff;
+  /*display: inline-block;*/
+  margin-top: 10px;
+}
+
+.car .deep-link {
+  /*background-color: #cd0d0d;*/
+  background-color: #c00;
+  color: #fff;
+  padding: 5px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 15px 0 10px 0;
+}
+
+.car .deep-link:active,
+.car .deep-link:hover {
+  text-decoration: none;
+  background-color: #df2121;
+}
+
+.car .img {
+  width: 181px;
+  background-repeat: no-repeat;
+  height: 82px;
+  float: right;
+  position: relative;
+  top: -55px;
+  background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Special%20car.png');
+}
+
+.car .img.CCAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Compact.png'); }
+.car .img.ECAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Economy.png'); }
+.car .img.FCAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Full%20Size.png'); }
+.car .img.SCAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Standard.png'); }
+.car .img.IFAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Midsize%20SUV.png'); }
+.car .img.FFAR, .car .img.FRAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Full%20Size%20SUV.png'); }
+.car .img.SFAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Standard%20SUV.png'); }
+.car .img.MVAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Minivan.png'); }
+.car .img.STAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Convertible.png'); }
+.car .img.ICAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Midsize.png'); }
+.car .img.SXAR, .car .img.XXAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Special%20car.png'); }
+.car .img.LCAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Luxury.png'); }
+.car .img.PCAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Premium.png'); }
+.car .img.SPAR { background-image: url('//ak-secure.hotwirestatic.com/x/static/images/car/cartypes/181x82/COLORED/Standard%20Pickup%20truck.png'); }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100000 !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba( 255, 255, 255, .8 );
+  background-image: url('/images/ajax-loader.gif');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.navbar-default {
+  background-image: -webkit-linear-gradient(top,#0f0 0,#0a0 100%);
+    background-image: -o-linear-gradient(top,#0f0 0,#0a0 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#0f0),to(#0a0));
+    background-image: linear-gradient(to bottom,#0f0 0,#0a0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00ff00', endColorstr='#ff00aa00', GradientType=0);
+}
+body {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+body.loading {
+  overflow: hidden;   
+}
+body.loading .modal {
+  display: block;
+}
+#error-message,
+.ui-dialog .ui-dialog-titlebar-close {
+  display: none;
+}
