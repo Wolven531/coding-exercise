@@ -75,6 +75,21 @@ angular
         $scope.end = start.add(1, 'day').format(dateFormat);
       }
     };
+    $scope.updateDestinationSources = function() {
+      if($scope.dest.length > 2) {
+        $http.get('//www.hotwire.com/autocomplete?PGoodCode=C&filterType=C&query=' + $scope.dest)
+          .then(function(resp) {
+            $('#dest')
+              .autocomplete('option', 'source',
+              resp.data.map(function(curr) {
+                return {
+                  value: curr.v,
+                  label: curr.v + (curr.airportEntry === true ? ' (' + curr.a + ' airport)' : ' (city)')
+                };
+              }));
+          });
+      }
+    };
 
     function getTimeOptions() {
       var results = [];

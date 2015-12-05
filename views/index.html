@@ -18,6 +18,10 @@
         .ready(function($) {
           $('#start').datepicker({ minDate: 0, maxDate: '+329D' });
           $('#end').datepicker({ minDate: 0, maxDate: '+330D' });
+          $('#dest').autocomplete({
+            source: [],
+            minLength: 3
+          });
         });
     </script>
   </head>
@@ -31,7 +35,7 @@
           <h3>Search Rentals</h3>
           <form ng-submit="updateResults()">
             <div class="input-group">
-              <input ng-model="dest" name="dest" class="form-control" placeholder="Destination" />
+              <input ng-model="dest" id="dest" name="dest" ng-change="updateDestinationSources()" class="form-control" placeholder="Enter address, zip, city, or airport" />
             </div>
             <div class="input-group">
               <span class="input-group-addon" id="pickup-addon">Pickup</span>
